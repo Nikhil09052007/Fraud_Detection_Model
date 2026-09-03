@@ -1,0 +1,31 @@
+# Core data & numerics
+pandas==3.0.5
+numpy==2.5.2
+
+# Machine learning
+scikit-learn==1.9.0
+xgboost==3.4.1
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+
+# Explainability
+shap==0.48.0
+
+# Visualization
+matplotlib==3.10.1
+seaborn==0.13.2
+
+# Notebooks
+jupyter==1.1.1
+ipykernel==6.29.5
+
+# Real-time API / serving
+fastapi==0.136.1
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+
+# Testing
+pytest==8.3.4
+
+# Utilities
+joblib==1.4.2
