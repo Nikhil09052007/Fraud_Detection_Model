@@ -301,3 +301,5 @@ FRAUD_DETECTION_RISK_SCORING/
 ├── requirements.txt
 │
 └── .gitignore
+
+So, this is the structure. 
