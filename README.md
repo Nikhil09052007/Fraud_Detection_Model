@@ -410,10 +410,9 @@ FRAUD_DETECTION_PROJECT/
 └── 26_COMPLETE_MENTAL_MODEL/
     └── ...
 
-
-
 ---
 
+---text
 
 # Data Validation in Fraud Detection — Theoretical & Intuitive View
 
@@ -434,7 +433,5 @@ Data validation in fraud detection is not a cleaning ritual.
 It is the first rigorous attempt to understand how the observable transaction world relates to the hidden fraud world — how rare the event is, how incomplete our visibility is, which signals are stable, and which ones are fragile.
 
 Only after this understanding is in place do we earn the right to engineer features or train models.
-
-
 
 ---
