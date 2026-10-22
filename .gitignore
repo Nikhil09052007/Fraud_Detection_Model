@@ -1,4 +1,5 @@
 data/01_raw/*.csv
 data/02_intermediate/*.pkl
-
-
+testing_notebook.ipynb
+.venv312
+.venv
