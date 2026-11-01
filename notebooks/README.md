@@ -20,3 +20,17 @@ Run notebooks in numeric order from the repository root or from `notebooks/`; ea
 ## Interpretation
 
 IEEE-CIS is a benchmark, not a live institution’s data. Cost, review capacity, and score-band values are placeholders. Model selection and threshold analysis reuse the same latest-20% validation window; treat the results as exploratory, not an unbiased final estimate. Before deployment, reserve a later untouched temporal test window, verify label maturity and cost assumptions, and implement point-in-time feature state.
+## How to reason through a notebook
+
+Before accepting a code block, ask:
+
+1. **Question:** What decision or uncertainty is this step addressing?
+2. **Unit and time:** Is this a customer, account, device, or transaction, and what was known at the prediction moment?
+3. **Transformation:** What does the code calculate, in plain language and (where useful) as a formula?
+4. **Alternative:** What simpler method could have been used, and what does this choice gain or lose?
+5. **Evidence:** Which metric or plot evaluates the choice, and what does that measure leave out?
+6. **Next action:** If the result changes, what should we investigate or change?
+
+The modeling notebooks intentionally distinguish three ideas: **feature importance** (which inputs influenced a model), **metric performance** (how predictions compare with labels), and **business value** (whether the resulting decisions improve outcomes). A feature can be influential without being causal; a strong metric can still create an impossible review queue; and a model score is not itself a decision.
+
+Use the markdown before each major code block as the decision note. When the code changes a transformation, threshold, or metric, rerun the downstream notebooks so their outputs describe the current logic.
